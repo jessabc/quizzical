@@ -233,7 +233,7 @@ input, select {
   cursor: pointer;
 }
 
-.check-answers-btn:hover {
+.reset-btn:hover {
   background: #5868b4;
 }
 
