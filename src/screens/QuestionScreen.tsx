@@ -3,6 +3,7 @@ import Card from '../components/Card'
 import { QuizData } from '../interfaces'
 import blob3 from '../assets/blob-3.png'
 import blob4 from '../assets/blob-4.png'
+import Button from '../components/Button'
 
 
 interface QuestionScreenProps {
@@ -68,11 +69,15 @@ export default function QuestionScreen({quizData, setQuizData}: QuestionScreenPr
             </div>
 
             {!isCheckAnswers ? 
-            <button className='check-answers-btn' onClick={checkAnswers}>Check answers</button> 
+            <Button className='check-answers-btn' onClick={checkAnswers}>
+                Check answers
+            </Button>
             :
             <div className='score-container'>
                 <p className='score'>{`You answered ${getStats()} questions correctly`}</p>
-                <button className='reset-btn' onClick={resetGame}>play again</button>
+                <Button className='reset-btn' onClick={resetGame}>
+                    Play again
+                </Button>
             </div>
             }
 

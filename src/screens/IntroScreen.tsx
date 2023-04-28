@@ -2,6 +2,7 @@ import { useForm } from "react-hook-form";
 import { DataFromAPI, FormData, QuizData } from "../interfaces";
 import blob1 from '../assets/blob-1.png'
 import blob2 from '../assets/blob-2.png'
+import Button from "../components/Button";
 
 
 interface IntroScreenProps {
@@ -95,7 +96,9 @@ export default function IntroScreen({setQuizData, setIsLoading}: IntroScreenProp
                     <option value="hard">Hard</option>
                 </select>
                 
-                <button className="start-btn">Start Quiz</button>
+                <Button className="start-btn"> 
+                    Start Quiz
+                </Button>
             </form>
         </div>
     )
