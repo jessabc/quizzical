@@ -1,6 +1,6 @@
 # Quizzical
 
-This is a solution to the [Quizzical Scrimba solo project] (https://scrimba.com/learn/frontend/solo-project-pro-quizzical-co24f49bea8aace7c174082c8). 
+This is a solution to the [Quizzical Scrimba solo project](https://scrimba.com/learn/frontend/solo-project-pro-quizzical-co24f49bea8aace7c174082c8). 
 
 ## Table of contents
 
