@@ -55,6 +55,7 @@ Requirements:
 - [he](https://www.npmjs.com/package/he) - package to deal with html entities
 - [loader](https://www.w3schools.com/howto/howto_css_loader.asp) - loading animation
 - [fade in element](https://stackoverflow.com/questions/11679567/using-css-for-a-fade-in-effect-on-page-load) - fade in element on page load
+- [Typescript cheatsheet](https://react-typescript-cheatsheet.netlify.app/) - this was a really helpful resource for Typescript 
 
 
 ## Author
