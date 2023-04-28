@@ -1,6 +1,6 @@
 # Quizzical
 
-This is a solution to the [Quizzical Scrimba solo project](https://scrimba.com/learn/frontend/solo-project-pro-quizzical-co24f49bea8aace7c174082c8) using the [Figma design](https://www.figma.com/file/E9S5iPcm10f0RIHK8mCqKL/Quizzical-App?node-id=0-1) provided. 
+This is my solution to the [Quizzical Scrimba solo project](https://scrimba.com/learn/frontend/solo-project-pro-quizzical-co24f49bea8aace7c174082c8) using the [Figma design](https://www.figma.com/file/E9S5iPcm10f0RIHK8mCqKL/Quizzical-App?node-id=0-1) provided. 
 
 ## Table of contents
 
