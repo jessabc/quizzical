@@ -28,7 +28,7 @@ Requirements:
 ### Links
 
 - Solution URL: [Github](https://github.com/jessabc/quizzical)
-- Live Site URL: [Quizzical](https://transcendent-gelato-29b13e.netlify.app)
+- Live Site URL: [Quizzical](https://quizzical-trivia-quiz.netlify.app)
 
 
 ## My process
@@ -60,7 +60,7 @@ Requirements:
 
 ## Author
 
-- Website - [My Portfolio](https://app.netlify.com/sites/kaleidoscopic-speculoos-9506a0/overview)
+- Website - [My Portfolio](https://jessportfolio.netlify.app)
 
 
 ## Acknowledgments
