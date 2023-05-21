@@ -1,6 +1,7 @@
 # Quizzical
 
-This is my solution to the [Quizzical Scrimba solo project](https://scrimba.com/learn/frontend/solo-project-pro-quizzical-co24f49bea8aace7c174082c8) using the [Figma design](https://www.figma.com/file/E9S5iPcm10f0RIHK8mCqKL/Quizzical-App?node-id=0-1) provided. 
+This is my solution to the [Quizzical Scrimba solo project](https://scrimba.com/learn/frontend/solo-project-pro-quizzical-co24f49bea8aace7c174082c8).
+
 
 ## Table of contents
 
@@ -12,7 +13,6 @@ This is my solution to the [Quizzical Scrimba solo project](https://scrimba.com/
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
-- [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
 
@@ -56,11 +56,6 @@ Requirements:
 - [loader](https://www.w3schools.com/howto/howto_css_loader.asp) - loading animation
 - [fade in element](https://stackoverflow.com/questions/11679567/using-css-for-a-fade-in-effect-on-page-load) - fade in element on page load
 - [Typescript cheatsheet](https://react-typescript-cheatsheet.netlify.app/) - this was a really helpful resource for Typescript 
-
-
-## Author
-
-- Website - [My Portfolio](https://jessportfolio.netlify.app)
 
 
 ## Acknowledgments
