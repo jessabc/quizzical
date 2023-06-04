@@ -1,0 +1,14 @@
+// px to rem
+// credit to 'Sass and BEM for beginners'  https://www.youtube.com/watch?v=jfMHA8SqUL4
+
+@use 'sass:math';
+
+@function rem($pixel) {
+    // divide 16 for rem
+    @if math.is-unitless($pixel) { 
+         @return math.div($pixel, 16) + rem;
+    } 
+    @else {    
+        @error 'do not use units'
+    }
+}

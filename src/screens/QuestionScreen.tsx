@@ -4,6 +4,7 @@ import { QuizData } from '../interfaces'
 import blob3 from '../assets/blob-3.png'
 import blob4 from '../assets/blob-4.png'
 import Button from '../components/Button'
+import './QuestionScreen.css'
 
 
 interface QuestionScreenProps {

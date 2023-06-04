@@ -1,0 +1,65 @@
+@use '../styles/abstracts/variables' as v;
+@use '../styles/abstracts/mixins' as m;
+@use '../styles/abstracts/functions' as f;
+
+
+/* IntroScreen */
+.intro-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+   
+.intro-blob1 {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.intro-blob2 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+h1 {
+  font-family: v.$headingFont;
+  font-style: normal;
+  font-weight: 700;
+  font-size: f.rem(32);
+  line-height: 37px;
+  text-align: center;
+  color: v.$darkColor;
+  margin-bottom: 1em;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: .5em;
+}
+
+input[type="number"] {
+  text-align: center;
+}
+
+input, select {
+  margin-bottom: .5em;
+  font-family: v.$bodyFont;
+  font-size: f.rem(16);
+  padding: .5em;
+  outline: none;
+}
+
+.start-btn {
+    @include m.button
+}
+
+.start-btn:hover {
+  @include m.buttonHover
+}
+
+
+  

@@ -1,5 +1,6 @@
 import { QuizData } from "../interfaces"
 import he from 'he'
+import './Card.css'
 
 
 interface CardProps {

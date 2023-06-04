@@ -1,0 +1,37 @@
+@use './variables' as v;
+
+// button
+@mixin button {
+    padding: .75em;
+    background: v.$mediumColor;
+    border-radius: 15px;
+    font-family: v.$bodyFont;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 19px;
+    text-align: center;
+    color: #F5F7FB;
+    cursor: pointer;
+    width: 100%;
+}
+
+@mixin buttonHover {
+    background: v.$lightColor;
+    font-size: 1.1rem;
+}
+
+
+// breakpoints
+// credit to 'Sass and BEM for beginners'  https://www.youtube.com/watch?v=jfMHA8SqUL4
+$breakpoints-up: (
+    "medium": 41.75em,
+    "large": 56.25em,
+    "xlarge":90em
+);
+
+@mixin breakpoint($size) {
+    @media(min-width: map-get($breakpoints-up, $size)) {
+        @content;
+    }
+}

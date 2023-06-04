@@ -3,6 +3,7 @@ import { DataFromAPI, FormData, QuizData } from "../interfaces";
 import blob1 from '../assets/blob-1.png'
 import blob2 from '../assets/blob-2.png'
 import Button from "../components/Button";
+import './IntroScreen.css'
 
 
 interface IntroScreenProps {

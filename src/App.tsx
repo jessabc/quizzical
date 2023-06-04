@@ -2,7 +2,7 @@ import {useState} from 'react'
 import IntroScreen from './screens/IntroScreen'
 import QuestionScreen from './screens/QuestionScreen'
 import { QuizData } from './interfaces'
-import './App.css'
+import './styles/main.css'
 
 
 function App() {

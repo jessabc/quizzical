@@ -1,0 +1,78 @@
+@use '../styles/abstracts/variables' as v;
+@use '../styles/abstracts/mixins' as m;
+@use '../styles/abstracts/functions' as f;
+
+/* Card */
+.question {
+  font-family: v.$headingFont;
+  font-style: normal;
+  font-weight: 700;
+  font-size:  f.rem(20);
+  line-height: 19px;
+  color: v.$darkColor;
+  margin-bottom: .5em;
+}
+  
+.choices-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  margin-bottom: 2em;
+
+  @include m.breakpoint(medium) {
+    flex-direction: row;
+
+  }
+}
+  
+.choice-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0.771045px solid v.$mediumColor;
+  border-radius: 7.71045px;
+  cursor: pointer;
+  font-family: v.$bodyFont;
+  font-style: normal;
+  font-weight: 500;
+  font-size: f.rem(16);
+  line-height: 15px;
+  text-align: center;
+  color: v.$darkColor;
+}
+
+.blue-hover:hover {
+  background-color: #D6DBF5;
+}
+
+.choice-label {
+  cursor: pointer;
+  width: 100%;
+  padding: .5em 1em;
+}
+  
+
+/* dynamic styling for choices */
+input[type="radio"] {
+    display: none;
+}
+
+.incorrect {
+  background: v.$incorrectAnswer;
+  border: none;
+  color:  v.$darkColor;
+  opacity: 0.5;
+}
+ 
+.correct {
+  background: v.$correctAnswer;
+  border: none;
+}
+
+.selected {
+  background: v.$selectedAnswer;
+}
+
+.unselected {
+  opacity: 0.5;
+}
