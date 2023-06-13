@@ -1,9 +1,11 @@
 import { useForm } from "react-hook-form";
-import { DataFromAPI, FormData, QuizData } from "../interfaces";
-import blob1 from '../assets/blob-1.png'
-import blob2 from '../assets/blob-2.png'
-import Button from "../components/Button";
+import { FormData, QuizData } from "../../interfaces";
+import blob1 from '../../assets/blob-1.png'
+import blob2 from '../../assets/blob-2.png'
+import Button from "../../components/Button/Button";
 import './IntroScreen.css'
+import { fetchData } from "../../helpers/fetchData";
+import { manipulateQuizData } from "../../helpers/manipulateQuizData";
 
 
 interface IntroScreenProps {
@@ -15,50 +17,19 @@ export default function IntroScreen({setQuizData, setIsLoading}: IntroScreenProp
 
     const { register, handleSubmit} = useForm<FormData>()
 
-    const onSubmit =  handleSubmit((data) => {
-        // so a loader appears until data is fetched from api 
-        setIsLoading(true)
-        // calls the fetchData function
-        fetchData(data)
-    })
-
-    // this async function fetches data from the api, and then calls the manipulateQuizData function with this data
-    async function fetchData(data: FormData) {
-        const {numQuestions, category, difficulty} = data 
-        const url = `https://opentdb.com/api.php?amount=${numQuestions}&category=${category}&difficulty=${difficulty}&type=multiple`
+    const onSubmit =  handleSubmit (async (inputData) => {
         
-        try {
-            const response = await fetch(url);
-            if (!response.ok) {
-                throw new Error((response.status).toString())
-            }
-            const apiData = await response.json();
-            manipulateQuizData(apiData)  
-        }
-        catch (error) {
-            alert(error);
-        }
-    }
+        // a loader appears until data is fetched from api 
+        setIsLoading(true)
 
-    // this function manipulates the data to make it easier to use, set it to quizData state, and stops the loader 
-    function manipulateQuizData(apiData: {results: DataFromAPI[]}) {
-        const {results} = apiData
+        // calls the fetchData function
+        const APIData = await fetchData(inputData)
 
-        const sortedAPIData = results.map((item: DataFromAPI, index) => {
-            const {correct_answer, incorrect_answers, question} = item
-            const shuffledChoices = [...incorrect_answers, correct_answer].sort(() => Math.random() - 0.5)
-            return {
-                id: index,
-                question: question,
-                multipleChoice: shuffledChoices,
-                correctAnswer: correct_answer,
-                selectedAnswer: ''
-            }
-        })
+        // call the manipulateQuizData function
+        const sortedAPIData =  manipulateQuizData(APIData)
         setQuizData(sortedAPIData)
         setIsLoading(false)
-    }
-   
+    }) 
 
     return (
         <div className="intro-container">

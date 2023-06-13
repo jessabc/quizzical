@@ -1,9 +1,9 @@
 import { useState } from 'react'
-import Card from '../components/Card'
-import { QuizData } from '../interfaces'
-import blob3 from '../assets/blob-3.png'
-import blob4 from '../assets/blob-4.png'
-import Button from '../components/Button'
+import Card from '../../components/Card/Card'
+import { QuizData } from '../../interfaces'
+import blob3 from '../../assets/blob-3.png'
+import blob4 from '../../assets/blob-4.png'
+import Button from '../../components/Button/Button'
 import './QuestionScreen.css'
 
 
